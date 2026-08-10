@@ -3,9 +3,9 @@
 ## Linguagens Formais e Autômatos
 
 **Tema:** sintaxe, semântica e análise de código  
-**Professor:** __________________________________________  
-**Aluno(a):** ___________________________________________  
-**Turma:** ___________________ **Data:** ____/____/________
+**Professor:** Murillo Edson Carvalho
+**Aluno(a):** Emille Souza Brault  
+**Turma:** ___________________ **Data:** 7/08/2026
 
 ---
 
@@ -45,25 +45,26 @@ Classifique cada sentença utilizando uma das categorias:
 
 | Item | Sentença | Classificação | Justificativa |
 |---:|---|:---:|---|
-| 1 | “As flores são belas.” |  |  |
-| 2 | “As flores é bela.” |  |  |
-| 3 | “Vou corre hoje no parque.” |  |  |
-| 4 | “Água bebeu José.” |  |  |
-| 5 | “O aluno acabou a prova.” |  |  |
+| 1 | “As flores são belas.” | A | Construção sintaticamente adequada. |
+| 2 | “As flores é bela.” | C | O verbo "é" está conjugado de forma inadequada. |
+| 3 | “Vou corre hoje no parque.” | C | A palavra "corre" está escrita de forma inadequada. |
+| 4 | “Água bebeu José.” | B | Problema de ordem. |
+| 5 | “O aluno acabou a prova.” | A | Construção sintaticamente adequada. |
 
 ### Questões complementares
 
 1. A sentença do item 4 é impossível em português ou apenas incomum na ordem mais frequente? Explique.
 
    **Resposta:**  
-   ____________________________________________________________________________  
+   Incomum nessa ordem, mas ela está gramaticalmente correta e conjugada da forma certa.
    ____________________________________________________________________________
 
 2. Reescreva todas as sentenças problemáticas de maneira adequada ao português usual.
 
    **Resposta:**  
-   ____________________________________________________________________________  
-   ____________________________________________________________________________
+   | 2 | “As flores são belas.” |
+   | 3 | “Vou correr hoje no parque.” |
+   | 4 | “José bebeu água.” |
 
 ---
 
@@ -83,10 +84,10 @@ Analise os trechos abaixo. Classifique o problema predominante como:
 45 := a;
 ```
 
-Classificação: ________
+Classificação: ___M_____
 
 Justificativa:  
-____________________________________________________________________________  
+_____Erro Semântico, os elementos não são compatíveis.______________________ 
 ____________________________________________________________________________
 
 ### Item 2
@@ -95,10 +96,10 @@ ____________________________________________________________________________
 então (a < 10) se;
 ```
 
-Classificação: ________
+Classificação: ____S____
 
 Justificativa:  
-____________________________________________________________________________  
+_______Erro sintático_____________________________
 ____________________________________________________________________________
 
 ### Item 3
@@ -108,10 +109,10 @@ inteiro soma;
 soma := 4.5;
 ```
 
-Classificação: ________
+Classificação: ___M_____
 
 Justificativa:  
-____________________________________________________________________________  
+________Erro semantico, o inteiro recebe real____________________________________________________________________  
 ____________________________________________________________________________
 
 ### Item 4
@@ -122,10 +123,10 @@ media := 10.0;
 
 Considere que `media` não foi declarada anteriormente.
 
-Classificação: ________
+Classificação: ___M_____
 
 Justificativa:  
-____________________________________________________________________________  
+_____Precisa declarar media antes.__________________________________________
 ____________________________________________________________________________
 
 ### Item 5
@@ -135,10 +136,10 @@ real media;
 media := 10.0;
 ```
 
-Classificação: ________
+Classificação: ___V____
 
 Justificativa:  
-____________________________________________________________________________  
+__________Válido, média foi declarada.______________________________________
 ____________________________________________________________________________
 
 ### Item 6
@@ -150,10 +151,10 @@ se a < 10 então
 
 Considere que `a` foi declarada como inteira.
 
-Classificação: ________
+Classificação: ____V____
 
 Justificativa:  
-____________________________________________________________________________  
+______Válido, como a foi declarada como inteiro a comparação é válida.______
 ____________________________________________________________________________
 
 ---
@@ -168,8 +169,8 @@ Explique a classe gramatical e o significado da palavra destacada em cada frase.
 2. “O **caminho** é longo.”
 
 **Explicação:**  
-____________________________________________________________________________  
-____________________________________________________________________________  
+__1- verbo "caminhar", o ato de andar de um lugar ao outro._________________
+___2- substantivo, faixa de terra ou via onde se caminha. __________________
 ____________________________________________________________________________
 
 ### Caso B — “colher”
@@ -178,8 +179,8 @@ ____________________________________________________________________________
 2. “A **colher** caiu no chão.”
 
 **Explicação:**  
-____________________________________________________________________________  
-____________________________________________________________________________  
+___1- verbo "colher", um apanhar de terra, juntar.__________________________
+____2- substantivo, um talher com cabo e parte funda._______________________ 
 ____________________________________________________________________________
 
 ### Caso C — programação
@@ -200,17 +201,17 @@ fim
 1. O que o nome `soma` representa em cada trecho?
 2. Que informações o compilador precisa consultar para interpretar corretamente esse nome?
 
-**Resposta:**  
-____________________________________________________________________________  
-____________________________________________________________________________  
-____________________________________________________________________________
+**Resposta:**   
+___1- trecho 1= indica uma variavel inteira._________________________
+___1- trecho 2= indica a realização de uma operação.________________________
+___2- a declaração realizada._______________________________________________
 
 ### Debate
 
 Por que um compilador precisa considerar declarações, tipos e escopos para decidir se um código está correto?
 
 **Anotações:**  
-____________________________________________________________________________  
+____Para poder corretamente processar o código e realizar as operações declaradas nele. 
 ____________________________________________________________________________  
 ____________________________________________________________________________
 
@@ -234,31 +235,34 @@ Responda:
 1. O trecho está sintaticamente correto? Justifique.
 
    **Resposta:**  
-   __________________________________________________________________________  
+   ____Sim, pois segue a linguagem estabelecida______________________________________________________________________  
    __________________________________________________________________________
 
 2. Há incompatibilidade de tipos ou uso de variável não declarada no trecho apresentado?
 
    **Resposta:**  
-   __________________________________________________________________________  
+   _______________Não, pois são do tipo real___________________________________________________________  
    __________________________________________________________________________
 
 3. O programa realiza o objetivo proposto? Justifique.
 
    **Resposta:**  
-   __________________________________________________________________________  
+   ________________Não__________________________________________________________  
    __________________________________________________________________________
 
 4. Classifique o problema como erro sintático, erro semântico estático ou erro lógico.
 
    **Resposta:**  
-   __________________________________________________________________________
+   ____________________Erro lógico______________________________________________________
 
 5. Corrija a linha responsável pelo problema.
 
 ```text
 
+real salario;
+real novoSalario;
 
+novoSalario := salario * 1.1;
 ```
 
 ---
@@ -273,25 +277,26 @@ Organize as etapas abaixo na ordem didática mais comum de um compilador:
 
 ### Parte A — Lista numerada
 
-1. __________________________________________________________________________
-2. __________________________________________________________________________
-3. __________________________________________________________________________
+1. análise léxica (*scanner*);____________________________________________
+2. análise sintática (*parser*).
+3. análise semântica; ____________________________________________________
 
 ### Parte B — O que cada etapa recebe e produz?
 
 | Etapa | O que analisa? | Exemplo de problema detectado |
-|---|---|---|
-| Análise léxica |  |  |
-| Análise sintática |  |  |
-| Análise semântica |  |  |
+| ---- | ----- | ------- |
+| **Análise léxica**    | Os caracteres do código-fonte e a formação dos tokens                   | Caractere ou sequência que não forma um token válido |
+| **Análise sintática** | Os tokens e sua organização conforme a gramática                        | Palavra ou comando em uma ordem/estrutura inválida   |
+| **Análise semântica** | A estrutura sintática, tipos, declarações e significado das construções | Variável não declarada ou incompatibilidade de tipos |
+
 
 ### Parte C — Fluxograma
 
 Desenhe um fluxo contendo os seguintes elementos:
 
 ```text
-Código-fonte → __________ → tokens → __________ → estrutura sintática
-            → __________ → código validado para as próximas etapas
+Código-fonte → análise léxica → tokens → análise sintática → estrutura sintática
+             → análise semântica → código validado para as próximas etapas
 ```
 
 ### Questão de reflexão
@@ -299,7 +304,9 @@ Código-fonte → __________ → tokens → __________ → estrutura sintática
 Por que a análise semântica normalmente depende dos resultados das análises léxica e sintática?
 
 **Resposta:**  
-____________________________________________________________________________  
+
+a semântica precisa da identificação da léxica e da estrutura da sintática 
+para fazer uma interpretação correta do programa. 
 ____________________________________________________________________________  
 ____________________________________________________________________________
 
